@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" lang="JavaScript"></script>
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="content">
+        <div class="content-wrapper">
+            <h1>Expense Tracker</h1>
+            <h2 class="h2">Add A New Item:</h3>
+            <form class="inputs">
+                <div class="input__top">
+                    <h2>Name:</h2>
+                    <input placeholder="Where was the expense made?" id="name"/>
+                </div>
+                <div class="input__bottom">
+                    <h2>Date:</h2>
+                    <input placeholder="mm/dd/yy" type="date" id="date"/>
+                    <h2>Amount:</h2>
+                    <input placeholder="$$$" id="amount"/>
+                </div>
+                <div class="button" id="btn">
+                    <button type="button" onclick="addExpense()">Add Expense</button>
+                </div>
+            </form>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th></i></th>
+                    </tr>
+                    <tr id=1>
+                        <td>McDonald's</td>
+                        <td>2020-09-18</td>
+                        <td>$12</td>
+                        <td class="class__row">
+                            <button class="close" id="close" onclick="deleteExpense()">X</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
